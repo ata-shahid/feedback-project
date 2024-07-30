@@ -1,12 +1,12 @@
 import mongoose, { Schema, Document, Mongoose } from "mongoose";
 
 export interface Message extends Document {
-  content: string;
+  message: string;
   createdAt: Date;
 }
 
 const messageSchema: Schema<Message> = new Schema({
-  content: {
+  message: {
     type: String,
     required: true,
   },
